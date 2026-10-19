@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Community OTT | Premium Streaming Platform</title>
+  <meta name="description"
+    content="The ultimate streaming destination for premium cinema, web series, and exclusive originals celebrating our community." />
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+  <!-- ── 1. Top Fixed Navigation Header ────────────────────────────────── -->
+  <header id="appHeader" class="app-header">
+    <div class="header-left">
+      <a href="#" class="brand-logo-wrap" id="brandLogo">
+        <img src="assets/brand/community-ott-logo.png" alt="Community OTT" class="brand-logo-img"
+          onerror="this.style.display='none'; document.getElementById('brandLogoTextFallback').style.display='flex';" />
+        <span id="brandLogoTextFallback" class="brand-logo-text" style="display:none;">
+          COMMUNITY<span class="brand-logo-badge">OTT</span>
+        </span>
+      </a>
+
+      <nav class="header-nav" id="headerNav" aria-label="Main navigation">
+        <a href="#heroSection" class="nav-link active" data-home-link>Home</a>
+        <div class="header-nav-sections" id="sectionNavLinks"></div>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <!-- Expanding Search Input -->
+      <div class="nav-search-wrap">
+        <button id="searchToggleBtn" class="floating-search-btn" aria-label="Search catalog">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+
+        <div id="searchBox" class="nav-search-box hidden">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--tenant-primary)" stroke-width="2.5"
+            style="flex-shrink:0;">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input type="text" id="searchInput" class="nav-search-input" placeholder="Search movies, shows, genres..."
+            autocomplete="off" />
+          <span id="searchClearBtn" class="nav-search-clear" title="Clear search">&times;</span>
+        </div>
+      </div>
+
+      <!-- Floating Language Selector (Supports en, ta, etc.) -->
+      <div class="lang-dropdown-wrapper">
+        <button id="langSelectorBtn" class="floating-lang-btn" aria-label="Change language">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+            class="floating-lang-icon">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span id="langSelectorLabel">English</span>
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="3"
+            class="floating-lang-arrow">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+
+        <!-- Dropdown Menu of available languages -->
+        <div id="langDropdownMenu" class="lang-dropdown-menu"></div>
+      </div>
+
+      <!-- User Profile Avatar -->
+      <div class="profile-avatar-btn" title="Profile: User">
+        U
+      </div>
+    </div>
+  </header>
+
+  <!-- ── 2. Hotstar Dynamic Hero Carousel ──────────────────────────────── -->
+  <section id="heroSection" class="hero-carousel-wrapper">
+    <div class="hero-carousel-stage">
+      <div class="hero-carousel-card">
+        <!-- 16:9 Backdrop Layer -->
+        <div id="heroBanner" class="hero-banner-image"></div>
+
+        <!-- Layered Dark Vignette Gradients -->
+        <div class="hero-left-gradient"></div>
+        <div class="hero-bottom-gradient"></div>
+        <div class="hero-top-gradient"></div>
+
+        <!-- Hero Brand Logo Overlay -->
+        <div class="hero-brand-logo-container">
+          <img src="assets/brand/community-ott-logo.png" alt="Community Logo"
+            style="max-height: 48px; max-width: 180px; object-fit: contain; filter: drop-shadow(0 4px 14px rgba(0,0,0,0.9));"
+            onerror="this.style.display='none';" />
+        </div>
+
+        <!-- Hero Content Box (Title Logo/Text, Badges, Desc, Actions) -->
+        <div id="heroContentBox" class="hero-content-box"></div>
+
+        <!-- Carousel Left / Right Navigation Arrows -->
+        <button id="heroArrowLeft" class="hero-nav-arrow hero-nav-arrow-left" aria-label="Previous featured title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <button id="heroArrowRight" class="hero-nav-arrow hero-nav-arrow-right" aria-label="Next featured title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <!-- Slide Progress Indicator Dots -->
+        <div id="heroIndicators" class="hero-indicators-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. Main Content & Rails Area ──────────────────────────────────── -->
+  <main id="mainContentContainer" class="main-content-container">
+
+    <!-- Active Search Filter Results View (Hidden when not searching) -->
+    <section id="searchResultsSection" class="search-results-section" style="display: none;">
+      <div class="search-results-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--tenant-primary)" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <h2 style="font-size: 18px; margin: 0; color: var(--text-primary);">Search Catalog Results</h2>
+          <span id="searchResultsCount" class="hero-badge hero-badge-primary">0 titles found</span>
+        </div>
+        <button id="clearSearchFilterBtn"
+          style="color: var(--text-secondary); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 6px; font-size: 13px; cursor: pointer;">
+          Clear Search &times;
+        </button>
+      </div>
+
+      <div id="searchResultsGrid" class="search-results-grid"></div>
+    </section>
+
+    <!-- Dynamic Content Sections Container (Rendered from sample.json) -->
+    <div id="railsContainer"></div>
+
+  </main>
+
+  <!-- ── 4. Cinematic Interactive Details Modal / Video Preview ────────── -->
+  <div id="detailsModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div id="modalContainer" class="modal-container">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <!-- 16:9 Banner Cover -->
+      <div id="modalHeroCover" class="modal-hero-cover">
+        <div class="modal-hero-gradient"></div>
+      </div>
+
+      <!-- Modal Info Body -->
+      <div class="modal-body-content">
+        <img id="modalTitleLogo" src="" alt="Title Logo" class="modal-title-logo" style="display:none;" />
+        <h2 id="modalTitle"
+          style="font-size: clamp(22px, 3.5vw, 36px); margin-bottom: 8px; color: var(--text-heading);"></h2>
+
+        <div id="modalMetaRow" class="modal-meta-row"></div>
+
+        <p id="modalDescription" class="modal-description"></p>
+
+        <div class="modal-actions">
+          <button id="modalPlayBtn" class="hero-btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Play Movie
+          </button>
+          <button id="modalWatchlistBtn" class="hero-btn-secondary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+            Add to Watchlist
+          </button>
+          <button id="modalShareBtn" class="hero-btn-secondary" title="Share link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+            Share
+          </button>
+        </div>
+
+        <!-- Simulated Video Player Container (Appears when Play is clicked) -->
+        <div id="modalPlayerBox" class="simulated-player-box" style="display: none;">
+          <div id="modalPlayerScreen" class="simulated-player-screen">
+            <div class="player-big-play">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+          <div class="player-controls-bar">
+            <button style="color:var(--text-primary); cursor:pointer;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+              </svg>
+            </button>
+            <div class="player-progress-bar">
+              <div class="player-progress-fill"></div>
+            </div>
+            <span style="font-size:12px; color:var(--text-muted); font-family:monospace;">42:18 / 2:15:00</span>
+            <span class="hero-badge hero-badge-primary" style="font-size:10px;">HD 1080p</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. Toast Feedback Notification ────────────────────────────────── -->
+  <div id="toastBox" class="toast-box">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--tenant-primary)">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M9 12l2 2 4-4" fill="none" stroke="#100E0B" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <span id="toastMessage"></span>
+  </div>
+
+  <!-- ── 6. Cinematic Master Footer ────────────────────────────────────── -->
+  <footer class="cust-footer">
+    <div class="cust-footer-inner">
+      <div class="cust-footer-top">
+        <div class="footer-brand-wrap">
+          <img src="assets/brand/community-ott-logo.png" alt="Community OTT" style="max-height: 28px;"
+            onerror="this.style.display='none';" />
+          <span style="color: var(--text-muted); font-size: 13px;">Celebrating Our Community</span>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Plans &amp; Pricing</a>
+          <a href="#" class="footer-link">Supported Devices</a>
+          <a href="#" class="footer-link">Watch History</a>
+          <a href="#" class="footer-link">Profiles</a>
+          <a href="#" class="footer-link">Privacy &amp; Terms</a>
+        </div>
+      </div>
+      <div class="cust-footer-bottom">
+        <div>&copy; 2026 Community OTT Platform. Adaptive HLS Video Transcoding Engine. All rights reserved.</div>
+        <div>Ultra HD 1080p &bull; Multi-Audio &bull; Subtitle Accessibility &bull; Static Demo Engine</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

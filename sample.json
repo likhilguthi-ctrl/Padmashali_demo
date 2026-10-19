@@ -1,0 +1,921 @@
+{
+  "hero_section": [
+    {
+      "id": "hero_padmashali_uttej",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Padmashali Luminary: Actor Uttej",
+          "description": "Cinematic journey • Life highlights • Special interview The profile brings together career milestones and a closer conversation about his life.",
+          "assets": {
+            "2_3": "./assets/community-personalities/padmashali_uttej/en/poster-2x3.png",
+            "16_9": "./assets/community-personalities/padmashali_uttej/en/banner-16x9.png",
+            "3_1": "./assets/community-personalities/padmashali_uttej/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "పద్మశాలి ప్రముఖుడు — నటుడు ఉత్తేజ్",
+          "description": "సినీ ప్రయాణం • జీవిత విశేషాలు • ప్రత్యేక ముఖాముఖి ఈ పరిచయంలో ఆయన సినీ జీవితంలోని ముఖ్య ఘట్టాలు, జీవిత విశేషాలపై ప్రత్యేక ముఖాముఖి ఉన్నాయి.",
+          "assets": {
+            "2_3": "./assets/community-personalities/padmashali_uttej/te/poster-2x3.png",
+            "16_9": "./assets/community-personalities/padmashali_uttej/te/banner-16x9.png",
+            "3_1": "./assets/community-personalities/padmashali_uttej/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_padmashali_pride",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Padmashali Pride",
+          "description": "A folk song celebrating Padmashali pride. Its lyrics place community identity and self-respect at the heart of a celebratory folk melody.",
+          "assets": {
+            "2_3": "./assets/music/padmashali_pride/en/poster-2x3.png",
+            "16_9": "./assets/music/padmashali_pride/en/banner-16x9.png",
+            "3_1": "./assets/music/padmashali_pride/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "పద్మశాలి పెద్దశాలి",
+          "description": "పద్మశాలుల గౌరవాన్ని చాటే జానపద గీతం. సమాజ గుర్తింపు, ఆత్మగౌరవాన్ని ఉత్సవభరితమైన జానపద స్వరంలో ఈ పాట ప్రతిధ్వనిస్తుంది.",
+          "assets": {
+            "2_3": "./assets/music/padmashali_pride/te/poster-2x3.png",
+            "16_9": "./assets/music/padmashali_pride/te/banner-16x9.png",
+            "3_1": "./assets/music/padmashali_pride/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_podcast_kanta_rao",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "A Conversation with Kanta Rao",
+          "description": "Cinema journey and behind-the-scenes stories with Kanta Rao. The conversation revisits defining moments from his career and memories from behind the camera.",
+          "assets": {
+            "2_3": "./assets/podcasts/kanta_rao/en/poster-2x3.png",
+            "16_9": "./assets/podcasts/kanta_rao/en/banner-16x9.png",
+            "3_1": "./assets/podcasts/kanta_rao/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "కాంతారావుతో ముఖాముఖి",
+          "description": "కాంతారావు సినీ ప్రయాణం, తెరవెనుక కథలు. ఆయన సినీ జీవితంలోని మలుపులు, కెమెరా వెనుక అనుభవాలను ఈ సంభాషణ మళ్లీ గుర్తుచేస్తుంది.",
+          "assets": {
+            "2_3": "./assets/podcasts/kanta_rao/te/poster-2x3.png",
+            "16_9": "./assets/podcasts/kanta_rao/te/banner-16x9.png",
+            "3_1": "./assets/podcasts/kanta_rao/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_education_av_narayana_ips",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "A.V. Narayana, IPS",
+          "description": "A beloved son of the Padmashali community. This profile connects his community roots with a career dedicated to policing and public service.",
+          "assets": {
+            "2_3": "./assets/education/av_narayana_ips/en/poster-2x3.png",
+            "16_9": "./assets/education/av_narayana_ips/en/banner-16x9.png",
+            "3_1": "./assets/education/av_narayana_ips/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "A.V. నారాయణ IPS",
+          "description": "పద్మశాలి ముద్దుబిడ్డ. సమాజ నేపథ్యం నుంచి పోలీసు సేవ, ప్రజాసేవ వరకు సాగిన ఆయన ప్రస్థానాన్ని ఈ పరిచయం చూపిస్తుంది.",
+          "assets": {
+            "2_3": "./assets/education/av_narayana_ips/te/poster-2x3.png",
+            "16_9": "./assets/education/av_narayana_ips/te/banner-16x9.png",
+            "3_1": "./assets/education/av_narayana_ips/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_web_amrutham",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Amrutham",
+          "description": "A nostalgic look at Amrutham, the much-loved Telugu comedy, brought to life through its memorable ensemble and playful humor.",
+          "assets": {
+            "2_3": "./assets/films-series/amrutham/en/poster-2x3.png",
+            "16_9": "./assets/films-series/amrutham/en/banner-16x9.png",
+            "3_1": "./assets/films-series/amrutham/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "అమృతం",
+          "description": "అందరికీ ఇష్టమైన తెలుగు హాస్య కథ అమృతం—గుర్తుండిపోయే పాత్రలు, చిలిపి హాస్యంతో నిండిన ఒక జ్ఞాపక ప్రయాణం.",
+          "assets": {
+            "2_3": "./assets/films-series/amrutham/te/poster-2x3.png",
+            "16_9": "./assets/films-series/amrutham/te/banner-16x9.png",
+            "3_1": "./assets/films-series/amrutham/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    }
+  ],
+  "content_section": [
+    {
+      "id": "sec_av",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Community Personalities",
+          "description": "Profiles and interviews featuring Padmashali artists, public figures, and community leaders."
+        },
+        {
+          "language": "te",
+          "title": "సమాజ ప్రముఖులు",
+          "description": "పద్మశాలి కళాకారులు, ప్రజాప్రతినిధులు, సమాజ నాయకుల పరిచయాలు, ముఖాముఖులు."
+        }
+      ],
+      "description": "Community Personalities",
+      "content": [
+        {
+          "random_value": "item_padmashali_uttej",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Padmashali Luminary: Actor Uttej",
+              "description": "Cinematic journey • Life highlights • Special interview The profile brings together career milestones and a closer conversation about his life.",
+              "assets": {
+                "2_3": "./assets/community-personalities/padmashali_uttej/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/padmashali_uttej/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/padmashali_uttej/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పద్మశాలి ప్రముఖుడు — నటుడు ఉత్తేజ్",
+              "description": "సినీ ప్రయాణం • జీవిత విశేషాలు • ప్రత్యేక ముఖాముఖి ఈ పరిచయంలో ఆయన సినీ జీవితంలోని ముఖ్య ఘట్టాలు, జీవిత విశేషాలపై ప్రత్యేక ముఖాముఖి ఉన్నాయి.",
+              "assets": {
+                "2_3": "./assets/community-personalities/padmashali_uttej/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/padmashali_uttej/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/padmashali_uttej/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_duvvasi_mohan",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Duvvasi Mohan: Padmashali Talent",
+              "description": "A life in comedy. This profile looks at the performer behind those familiar comic moments and his place in Telugu entertainment.",
+              "assets": {
+                "2_3": "./assets/community-personalities/duvvasi_mohan/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/duvvasi_mohan/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/duvvasi_mohan/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పద్మశాలి ప్రతిభ — దువ్వాసి మోహన్",
+              "description": "వెండితెరపై హాస్య ప్రయాణం గుర్తుండిపోయే హాస్య క్షణాల వెనుక ఉన్న కళాకారుడి ప్రస్థానం, తెలుగు వినోద రంగంలో ఆయన స్థానాన్ని ఈ పరిచయం చూపిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/duvvasi_mohan/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/duvvasi_mohan/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/duvvasi_mohan/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_gundu_hanumantha_rao",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Gundu Hanumantha Rao: A Padmashali Son",
+              "description": "A beloved face of Telugu comedy. Explore the performances and comic timing that made him a familiar presence for Telugu audiences.",
+              "assets": {
+                "2_3": "./assets/community-personalities/gundu_hanumantha_rao/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/gundu_hanumantha_rao/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/gundu_hanumantha_rao/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పద్మశాలి బిడ్డ — గుండు హనుమంతరావు",
+              "description": "తెలుగు హాస్యానికి చిరునామా! తెలుగు ప్రేక్షకులకు ఆయనను చేరువ చేసిన నటనలు, ప్రత్యేకమైన హాస్య టైమింగ్‌ను ఈ పరిచయం గుర్తుచేస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/gundu_hanumantha_rao/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/gundu_hanumantha_rao/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/gundu_hanumantha_rao/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_panchumarthi_anuradha",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Panchumarthi Anuradha: Our Padmashali Daughter",
+              "description": "Vijayawada mayor at 26. Her story highlights early leadership and public service in Vijayawada.",
+              "assets": {
+                "2_3": "./assets/community-personalities/panchumarthi_anuradha/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/panchumarthi_anuradha/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/panchumarthi_anuradha/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మన పద్మశాలి ముద్దుబిడ్డ — పంచుమర్తి అనురాధ",
+              "description": "26 ఏళ్లకే విజయవాడ మేయర్‌గా విజయవాడలో చిన్న వయసులోనే నాయకత్వ బాధ్యతలు చేపట్టి ప్రజాసేవ చేసిన ఆమె ప్రయాణాన్ని ఇది పరిచయం చేస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/panchumarthi_anuradha/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/panchumarthi_anuradha/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/panchumarthi_anuradha/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_urvashi_sharada",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Urvashi Sharada: The Golden Era Star",
+              "description": "A celebrated star of Telugu cinema. The profile recalls her memorable performances and enduring contribution to Telugu cinema.",
+              "assets": {
+                "2_3": "./assets/community-personalities/urvashi_sharada/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/urvashi_sharada/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/urvashi_sharada/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "తెలుగు సినీ స్వర్ణయుగ నటి — ఉర్వశి శారద",
+              "description": "తెలుగు సినిమా స్వర్ణయుగ నటి ఆమె చిరస్మరణీయ నటనలను, తెలుగు సినిమాకు అందించిన నిలకడైన సేవలను ఈ పరిచయం గుర్తుచేస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/urvashi_sharada/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/urvashi_sharada/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/urvashi_sharada/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_koundinya_akkineni_bapuji",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Koundinya Akkineni Bapuji",
+              "description": "Padmashali leader • Telangana movement leader. Learn about his community leadership and role in the Telangana movement.",
+              "assets": {
+                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కౌండిన్య అక్కినేని బాపూజీ",
+              "description": "పద్మశాలి నాయకుడు • తెలంగాణ ఉద్యమ నేత సమాజ నాయకత్వంలో, తెలంగాణ ఉద్యమంలో ఆయన పాత్రను ఈ పరిచయం వివరిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_songs",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Songs",
+          "description": "Folk songs celebrating Padmashali identity, handloom craftsmanship, and the lives of weaving communities."
+        },
+        {
+          "language": "te",
+          "title": "పాటలు",
+          "description": "పద్మశాలి గుర్తింపు, చేనేత కళ, నేత కార్మికుల జీవితాలను కీర్తించే జానపద గీతాలు."
+        }
+      ],
+      "description": "Songs",
+      "content": [
+        {
+          "random_value": "item_padmashali_pride",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Padmashali Pride",
+              "description": "A folk song celebrating Padmashali pride. Its lyrics place community identity and self-respect at the heart of a celebratory folk melody.",
+              "assets": {
+                "2_3": "./assets/music/padmashali_pride/en/poster-2x3.png",
+                "16_9": "./assets/music/padmashali_pride/en/banner-16x9.png",
+                "3_1": "./assets/music/padmashali_pride/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పద్మశాలి పెద్దశాలి",
+              "description": "పద్మశాలుల గౌరవాన్ని చాటే జానపద గీతం. సమాజ గుర్తింపు, ఆత్మగౌరవాన్ని ఉత్సవభరితమైన జానపద స్వరంలో ఈ పాట ప్రతిధ్వనిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/music/padmashali_pride/te/poster-2x3.png",
+                "16_9": "./assets/music/padmashali_pride/te/banner-16x9.png",
+                "3_1": "./assets/music/padmashali_pride/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_chenetha_padmashali",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Padmashali Weaver",
+              "description": "A folk song honoring the Padmashali handloom tradition. The song celebrates the craft, skill, and heritage carried forward by generations of weavers.",
+              "assets": {
+                "2_3": "./assets/music/chenetha_padmashali/en/poster-2x3.png",
+                "16_9": "./assets/music/chenetha_padmashali/en/banner-16x9.png",
+                "3_1": "./assets/music/chenetha_padmashali/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "చేనేత పద్మశాలి",
+              "description": "పద్మశాలి చేనేత సంప్రదాయాన్ని గౌరవించే జానపద గీతం. తరతరాలుగా కొనసాగుతున్న చేనేత నైపుణ్యం, కళ, వారసత్వాన్ని ఈ పాట గౌరవిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/music/chenetha_padmashali/te/poster-2x3.png",
+                "16_9": "./assets/music/chenetha_padmashali/te/banner-16x9.png",
+                "3_1": "./assets/music/chenetha_padmashali/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_enthamayaga_pasupu",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Golden Thread’s Enchantment",
+              "description": "A song of the beauty and magic of weaving. A lyrical tribute to the colors, threads, and artistry woven into handloom life.",
+              "assets": {
+                "2_3": "./assets/music/enthamayaga_pasupu/en/poster-2x3.png",
+                "16_9": "./assets/music/enthamayaga_pasupu/en/banner-16x9.png",
+                "3_1": "./assets/music/enthamayaga_pasupu/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఎంత మాయగా పసుపు పసరం",
+              "description": "చేనేతలోని అందం, మాయను తెలిపే పాట. చేనేత జీవితంలో కలిసిన రంగులు, దారాలు, కళాత్మకతకు ఈ పాట లయబద్ధమైన నివాళి.",
+              "assets": {
+                "2_3": "./assets/music/enthamayaga_pasupu/te/poster-2x3.png",
+                "16_9": "./assets/music/enthamayaga_pasupu/te/banner-16x9.png",
+                "3_1": "./assets/music/enthamayaga_pasupu/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_seethanna_pata",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Seethanna’s Song: A Heart Woven with Strength",
+              "description": "A heartfelt folk song from the loom. The song honors the determination and hard work woven into a weaver’s daily life.",
+              "assets": {
+                "2_3": "./assets/music/seethanna_pata/en/poster-2x3.png",
+                "16_9": "./assets/music/seethanna_pata/en/banner-16x9.png",
+                "3_1": "./assets/music/seethanna_pata/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "గుండెనే కండగా మలిచి సీతన్న పాట",
+              "description": "చేనేత జీవనాన్ని పలికించే హృద్యమైన జానపద గీతం. చేనేత కార్మికుడి రోజువారీ జీవితంలో ఉన్న పట్టుదల, కష్టానికి ఈ పాట గౌరవం అందిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/music/seethanna_pata/te/poster-2x3.png",
+                "16_9": "./assets/music/seethanna_pata/te/banner-16x9.png",
+                "3_1": "./assets/music/seethanna_pata/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_sircilla_padmashali",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "O, These Weavers’ Lives! O, Padmashalis of Sircilla!",
+              "description": "A folk song about the lives of Sircilla weavers. Through a folk voice, it reflects the work, hopes, and everyday experiences of Sircilla’s weaving community.",
+              "assets": {
+                "2_3": "./assets/music/sircilla_padmashali/en/poster-2x3.png",
+                "16_9": "./assets/music/sircilla_padmashali/en/banner-16x9.png",
+                "3_1": "./assets/music/sircilla_padmashali/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "చేనేత బ్రతుకులే ఓయన్నా సిరిసిల్ల పద్మశాలన్నా",
+              "description": "సిరిసిల్ల చేనేత కార్మికుల జీవితాలపై జానపద గీతం. జానపద స్వరంలో సిరిసిల్ల చేనేత సమాజపు శ్రమ, ఆశలు, రోజువారీ అనుభవాలను ఈ పాట ప్రతిబింబిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/music/sircilla_padmashali/te/poster-2x3.png",
+                "16_9": "./assets/music/sircilla_padmashali/te/banner-16x9.png",
+                "3_1": "./assets/music/sircilla_padmashali/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_podcast",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Podcasts",
+          "description": "Long-form conversations about cinema, community heritage, entrepreneurship, politics, and personal journeys."
+        },
+        {
+          "language": "te",
+          "title": "పాడ్‌కాస్ట్‌లు",
+          "description": "సినిమా, సమాజ వారసత్వం, వ్యాపారం, రాజకీయాలు, వ్యక్తిగత ప్రస్థానాలపై విస్తృత సంభాషణలు."
+        }
+      ],
+      "description": "Podcasts",
+      "content": [
+        {
+          "random_value": "item_podcast_kanta_rao",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A Conversation with Kanta Rao",
+              "description": "Cinema journey and behind-the-scenes stories with Kanta Rao. The conversation revisits defining moments from his career and memories from behind the camera.",
+              "assets": {
+                "2_3": "./assets/podcasts/kanta_rao/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/kanta_rao/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/kanta_rao/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కాంతారావుతో ముఖాముఖి",
+              "description": "కాంతారావు సినీ ప్రయాణం, తెరవెనుక కథలు. ఆయన సినీ జీవితంలోని మలుపులు, కెమెరా వెనుక అనుభవాలను ఈ సంభాషణ మళ్లీ గుర్తుచేస్తుంది.",
+              "assets": {
+                "2_3": "./assets/podcasts/kanta_rao/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/kanta_rao/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/kanta_rao/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_special_conversation",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A Special Podcast Conversation",
+              "description": "A special podcast conversation about cinema and personal stories. The episode leaves room for reflections on creative work, life experiences, and the stories behind them.",
+              "assets": {
+                "2_3": "./assets/podcasts/special_conversation/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/special_conversation/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/special_conversation/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "అయితో స్పెషల్ పోడ్‌కాస్ట్",
+              "description": "సినీ ప్రయాణం, తెరవెనుక కథలతో ప్రత్యేక పోడ్‌కాస్ట్. సృజనాత్మక ప్రయాణం, జీవిత అనుభవాలు, వాటి వెనుక ఉన్న కథలపై ఈ ఎపిసోడ్‌లో ఆలోచనాత్మక సంభాషణ సాగుతుంది.",
+              "assets": {
+                "2_3": "./assets/podcasts/special_conversation/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/special_conversation/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/special_conversation/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_face_to_face",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Face to Face: Padmashali Community",
+              "description": "A discussion on the Padmashali community, political journey, and experiences. The discussion brings together community heritage, handloom traditions, and perspectives on public life.",
+              "assets": {
+                "2_3": "./assets/podcasts/face_to_face/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/face_to_face/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/face_to_face/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ముఖాముఖి",
+              "description": "పద్మశాలి వారసత్వం, చేనేత, సమాజంపై ముఖాముఖి. సమాజ వారసత్వం, చేనేత సంప్రదాయం, ప్రజాజీవితంపై విభిన్న అభిప్రాయాలను ఈ చర్చ ఒకచోటికి తీసుకువస్తుంది.",
+              "assets": {
+                "2_3": "./assets/podcasts/face_to_face/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/face_to_face/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/face_to_face/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_nimmala_kishtappa",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "With Nimmala Kishtappa",
+              "description": "A special discussion on the Padmashali community. Hear reflections on community life, shared heritage, and the issues that matter to its members.",
+              "assets": {
+                "2_3": "./assets/podcasts/nimmala_kishtappa/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/nimmala_kishtappa/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/nimmala_kishtappa/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "నిమ్మల కిష్టప్పతో",
+              "description": "పద్మశాలి సమాజం గురించి ప్రత్యేక చర్చ. సమాజ జీవితం, ఉమ్మడి వారసత్వం, సభ్యులకు ముఖ్యమైన అంశాలపై ఆయన అభిప్రాయాలను వినండి.",
+              "assets": {
+                "2_3": "./assets/podcasts/nimmala_kishtappa/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/nimmala_kishtappa/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/nimmala_kishtappa/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_nalli_kuppuswami_chetti",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Nalli Kuppuswami Chetti",
+              "description": "An entrepreneur with many achievements. The conversation highlights his entrepreneurial path, major milestones, and lessons from building a business.",
+              "assets": {
+                "2_3": "./assets/podcasts/nalli_kuppuswami_chetti/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/nalli_kuppuswami_chetti/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/nalli_kuppuswami_chetti/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "నల్లి కుప్పుస్వామి చెట్టి",
+              "description": "ఒక వ్యాపారవేత్త… ఎన్నో విజయాలు! వ్యాపార నిర్మాణంలో ఆయన అనుసరించిన మార్గం, ముఖ్య విజయాలు, నేర్చుకున్న పాఠాలను ఈ సంభాషణ పరిచయం చేస్తుంది.",
+              "assets": {
+                "2_3": "./assets/podcasts/nalli_kuppuswami_chetti/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/nalli_kuppuswami_chetti/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/nalli_kuppuswami_chetti/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_tigiri_narendra",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Tigiri Narendra: A Political Journey",
+              "description": "A conversation about Tigiri Narendra’s political journey. The episode traces key moments in his public life and the experiences that shaped his political path.",
+              "assets": {
+                "2_3": "./assets/podcasts/tigiri_narendra/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/tigiri_narendra/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/tigiri_narendra/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "తిగిరి నరేంద్ర — రాజకీయ ప్రస్థానం",
+              "description": "తిగిరి నరేంద్ర రాజకీయ ప్రస్థానం. ఆయన ప్రజాజీవితంలోని ముఖ్య ఘట్టాలు, రాజకీయ ప్రస్థానాన్ని ప్రభావితం చేసిన అనుభవాలను ఈ ఎపిసోడ్ వివరిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/podcasts/tigiri_narendra/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/tigiri_narendra/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/tigiri_narendra/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_gundu_sudha_rani",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "From Warangal to Rajya Sabha",
+              "description": "Gundu Sudha Rani’s journey from Warangal to the Rajya Sabha. Follow the milestones of her public career, from her roots in Warangal to service in the Upper House of Parliament.",
+              "assets": {
+                "2_3": "./assets/podcasts/gundu_sudha_rani/en/poster-2x3.png",
+                "16_9": "./assets/podcasts/gundu_sudha_rani/en/banner-16x9.png",
+                "3_1": "./assets/podcasts/gundu_sudha_rani/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "వరంగల్ నుంచి రాజ్యసభ వరకు — గుండు సుధారాణి",
+              "description": "వరంగల్ నుంచి రాజ్యసభ వరకు గుండు సుధారాణి ప్రయాణం. వరంగాల్ నేపథ్యం నుంచి పార్లమెంటు ఎగువ సభలో సేవ వరకు ఆమె ప్రజాజీవితంలోని ముఖ్య ఘట్టాలను తెలుసుకోండి.",
+              "assets": {
+                "2_3": "./assets/podcasts/gundu_sudha_rani/te/poster-2x3.png",
+                "16_9": "./assets/podcasts/gundu_sudha_rani/te/banner-16x9.png",
+                "3_1": "./assets/podcasts/gundu_sudha_rani/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_education",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Education",
+          "description": "Profiles and stories across education, law, medicine, policing, public service, and personal growth."
+        },
+        {
+          "language": "te",
+          "title": "విద్య",
+          "description": "విద్య, న్యాయం, వైద్యం, పోలీసు మరియు ప్రజాసేవ, వ్యక్తిగత అభివృద్ధి రంగాల పరిచయాలు, కథలు."
+        }
+      ],
+      "description": "Education",
+      "content": [
+        {
+          "random_value": "item_education_av_narayana_ips",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A.V. Narayana, IPS",
+              "description": "A beloved son of the Padmashali community. This profile connects his community roots with a career dedicated to policing and public service.",
+              "assets": {
+                "2_3": "./assets/education/av_narayana_ips/en/poster-2x3.png",
+                "16_9": "./assets/education/av_narayana_ips/en/banner-16x9.png",
+                "3_1": "./assets/education/av_narayana_ips/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "A.V. నారాయణ IPS",
+              "description": "పద్మశాలి ముద్దుబిడ్డ. సమాజ నేపథ్యం నుంచి పోలీసు సేవ, ప్రజాసేవ వరకు సాగిన ఆయన ప్రస్థానాన్ని ఈ పరిచయం చూపిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/education/av_narayana_ips/te/poster-2x3.png",
+                "16_9": "./assets/education/av_narayana_ips/te/banner-16x9.png",
+                "3_1": "./assets/education/av_narayana_ips/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_education_yv_ravi_prasad",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Y.V. Ravi Prasad",
+              "description": "His journey in the legal profession. A profile of his professional path and the work that shaped his career in law.",
+              "assets": {
+                "2_3": "./assets/education/yv_ravi_prasad/en/poster-2x3.png",
+                "16_9": "./assets/education/yv_ravi_prasad/en/banner-16x9.png",
+                "3_1": "./assets/education/yv_ravi_prasad/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "Y.V. రవి ప్రసాద్",
+              "description": "గారి న్యాయ ప్రయాణం. న్యాయవాద వృత్తిలో ఆయన ప్రయాణం, వృత్తిని తీర్చిదిద్దిన పనిని ఈ పరిచయం వివరిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/education/yv_ravi_prasad/te/poster-2x3.png",
+                "16_9": "./assets/education/yv_ravi_prasad/te/banner-16x9.png",
+                "3_1": "./assets/education/yv_ravi_prasad/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_education_growth_journey",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A Journey of Growth",
+              "description": "Education • Skills • Achievement. A general story of learning, building practical skills, and working toward meaningful achievement.",
+              "assets": {
+                "2_3": "./assets/education/growth_journey/en/poster-2x3.png",
+                "16_9": "./assets/education/growth_journey/en/banner-16x9.png",
+                "3_1": "./assets/education/growth_journey/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "వృద్ధి ప్రయాణం",
+              "description": "విద్య • నైపుణ్యాలు • విజయం. నేర్చుకోవడం, ఉపయోగకరమైన నైపుణ్యాలను పెంపొందించుకోవడం, లక్ష్యసాధన దిశగా సాగడంపై ఈ సాధారణ కథనం దృష్టి పెడుతుంది.",
+              "assets": {
+                "2_3": "./assets/education/growth_journey/te/poster-2x3.png",
+                "16_9": "./assets/education/growth_journey/te/banner-16x9.png",
+                "3_1": "./assets/education/growth_journey/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_education_adapula_satyanarayana",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Adapula Satyanarayana",
+              "description": "A police officer in public service. The profile recognizes his role in policing and the responsibility of serving the public.",
+              "assets": {
+                "2_3": "./assets/education/adapula_satyanarayana/en/poster-2x3.png",
+                "16_9": "./assets/education/adapula_satyanarayana/en/banner-16x9.png",
+                "3_1": "./assets/education/adapula_satyanarayana/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "అడపుల సత్యనారాయణ",
+              "description": "ప్రజా సేవలో పోలీస్ అధికారి. పోలీసు అధికారిగా ఆయన పాత్రను, ప్రజలకు సేవ చేయும் బాధ్యతను ఈ పరిచయం గుర్తిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/education/adapula_satyanarayana/te/poster-2x3.png",
+                "16_9": "./assets/education/adapula_satyanarayana/te/banner-16x9.png",
+                "3_1": "./assets/education/adapula_satyanarayana/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_education_dr_eshwar_prasad",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Dr. Eshwar Prasad",
+              "description": "His journey in medicine. A profile of his medical career and the path he has followed in healthcare.",
+              "assets": {
+                "2_3": "./assets/education/dr_eshwar_prasad/en/poster-2x3.png",
+                "16_9": "./assets/education/dr_eshwar_prasad/en/banner-16x9.png",
+                "3_1": "./assets/education/dr_eshwar_prasad/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "డా. ఈశ్వర్ ప్రసాద్",
+              "description": "గారి వైద్య ప్రస్థానం. వైద్యరంగంలో ఆయన వృత్తి, ఆరోగ్య సేవల్లో ఆయన అనుసరించిన ప్రస్థానాన్ని ఈ పరిచయం వివరిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/education/dr_eshwar_prasad/te/poster-2x3.png",
+                "16_9": "./assets/education/dr_eshwar_prasad/te/banner-16x9.png",
+                "3_1": "./assets/education/dr_eshwar_prasad/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_web",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Films & Series",
+          "description": "A collection of Telugu films and web series, from comedy and suspense to cinematic tributes."
+        },
+        {
+          "language": "te",
+          "title": "సినిమాలు & సిరీస్‌లు",
+          "description": "హాస్యం, ఉత్కంఠ నుంచి సినీ నివాళుల వరకు తెలుగు సినిమాలు, వెబ్ సిరీస్‌ల సమాహారం."
+        }
+      ],
+      "description": "Films & Series",
+      "content": [
+        {
+          "random_value": "item_web_kanta_rao",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Kanta Rao",
+              "description": "A tribute to Kanta Rao, framed by the legendary characters and cinematic moments that shaped his screen legacy.",
+              "assets": {
+                "2_3": "./assets/films-series/kanta_rao/en/poster-2x3.png",
+                "16_9": "./assets/films-series/kanta_rao/en/banner-16x9.png",
+                "3_1": "./assets/films-series/kanta_rao/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కాంతారావు",
+              "description": "కాంతారావుకు నివాళిగా, ఆయన సినీ ప్రస్థానాన్ని గుర్తుచేసే పౌరాణిక పాత్రలు మరియు చిరస్మరణీయ దృశ్యాలతో ఈ కథనం రూపొందింది.",
+              "assets": {
+                "2_3": "./assets/films-series/kanta_rao/te/poster-2x3.png",
+                "16_9": "./assets/films-series/kanta_rao/te/banner-16x9.png",
+                "3_1": "./assets/films-series/kanta_rao/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_web_amrutham",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Amrutham",
+              "description": "A nostalgic look at Amrutham, the much-loved Telugu comedy, brought to life through its memorable ensemble and playful humor.",
+              "assets": {
+                "2_3": "./assets/films-series/amrutham/en/poster-2x3.png",
+                "16_9": "./assets/films-series/amrutham/en/banner-16x9.png",
+                "3_1": "./assets/films-series/amrutham/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "అమృతం",
+              "description": "అందరికీ ఇష్టమైన తెలుగు హాస్య కథ అమృతం—గుర్తుండిపోయే పాత్రలు, చిలిపి హాస్యంతో నిండిన ఒక జ్ఞాపక ప్రయాణం.",
+              "assets": {
+                "2_3": "./assets/films-series/amrutham/te/poster-2x3.png",
+                "16_9": "./assets/films-series/amrutham/te/banner-16x9.png",
+                "3_1": "./assets/films-series/amrutham/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_web_sampraadayini_suppini_suddapoosani",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Sampraadayini Suppini Suddapoosani",
+              "description": "A family crime-comedy led by Sivaji and Laya, blending domestic humor with a lively mystery.",
+              "assets": {
+                "2_3": "./assets/films-series/sampraadayini_suppini_suddapoosani/en/poster-2x3.png",
+                "16_9": "./assets/films-series/sampraadayini_suppini_suddapoosani/en/banner-16x9.png",
+                "3_1": "./assets/films-series/sampraadayini_suppini_suddapoosani/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "సాంప్రదాయిని సుప్పిని సుద్దపూసని",
+              "description": "శివాజీ, లయ ప్రధాన పాత్రల్లో నటించిన కుటుంబ క్రైమ్ కామెడీ. ఇంటి సరదా క్షణాలకు ఉత్కంఠభరితమైన మిస్టరీ తోడవుతుంది.",
+              "assets": {
+                "2_3": "./assets/films-series/sampraadayini_suppini_suddapoosani/te/poster-2x3.png",
+                "16_9": "./assets/films-series/sampraadayini_suppini_suddapoosani/te/banner-16x9.png",
+                "3_1": "./assets/films-series/sampraadayini_suppini_suddapoosani/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_web_nayanam",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Nayanam",
+              "description": "A suspenseful, cinematic portrait of Uttej, highlighting another facet of his screen presence.",
+              "assets": {
+                "2_3": "./assets/films-series/nayanam/en/poster-2x3.png",
+                "16_9": "./assets/films-series/nayanam/en/banner-16x9.png",
+                "3_1": "./assets/films-series/nayanam/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "నయనం",
+              "description": "ఉత్తేజ్ తెరపై చూపించే మరో కోణాన్ని, ఉత్కంఠభరితమైన సినిమాటిక్ నేపథ్యంతో పరిచయం చేసే నయనం.",
+              "assets": {
+                "2_3": "./assets/films-series/nayanam/te/poster-2x3.png",
+                "16_9": "./assets/films-series/nayanam/te/banner-16x9.png",
+                "3_1": "./assets/films-series/nayanam/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_web_mango",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Mango",
+              "description": "A dramatic story presented with a film-inspired visual world, spanning the energy of cinema and web series.",
+              "assets": {
+                "2_3": "./assets/films-series/mango/en/poster-2x3.png",
+                "16_9": "./assets/films-series/mango/en/banner-16x9.png",
+                "3_1": "./assets/films-series/mango/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మ్యాంగో",
+              "description": "సినిమా వాతావరణాన్ని గుర్తుచేసే దృశ్యాలతో, వెబ్ సిరీస్ ప్రపంచపు ఉత్సాహాన్ని కలిపి చెప్పే నాటకీయ కథ.",
+              "assets": {
+                "2_3": "./assets/films-series/mango/te/poster-2x3.png",
+                "16_9": "./assets/films-series/mango/te/banner-16x9.png",
+                "3_1": "./assets/films-series/mango/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

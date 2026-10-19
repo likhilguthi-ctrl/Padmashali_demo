@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="50%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#171412"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9a441" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#98651d" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bgGrad)"/>
+  <rect x="20" y="20" width="560" height="860" rx="16" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+  <circle cx="300" cy="420" r="64" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <path d="M285 390 L330 420 L285 450 Z" fill="url(#iconGrad)"/>
+  <text x="300" y="530" fill="rgba(255,255,255,0.3)" font-family="sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="2">COMMUNITY OTT</text>
+  <text x="300" y="560" fill="rgba(255,255,255,0.18)" font-family="sans-serif" font-size="14" text-anchor="middle" letter-spacing="1">PREMIUM STREAMING</text>
+</svg>
