@@ -458,7 +458,6 @@
                   <span class="section-title-bar"></span>
                   ${localizedSec.title}
                 </h3>
-                ${localizedSec.description ? `<p class="section-description">${localizedSec.description}</p>` : ''}
               </div>
               <button class="section-see-all" data-sec-idx="${secIdx}">
                 See All
@@ -542,8 +541,6 @@
           <div class="card-poster-box">
             <img 
               src="${posterUrl}" 
-              alt="${card.title}" 
-              data-title="${card.title}"
               class="card-poster-img"
               loading="lazy"
               onerror="window.onPosterImgError(this)"
@@ -564,14 +561,12 @@
               </div>
             </div>
           </div>
-          <div class="card-info">
-            <div class="card-title" title="${card.title}">${card.title}</div>
-            <p class="card-description" title="${card.description}">${card.description}</p>
-          </div>
         </div>
       </div>
     `;
   }
+
+  //            <p class="card-description" title="${card.description}">${card.description}</p>
 
   // ── 10. Search Functionality ──────────────────────────────────────────
   function handleSearch(query) {
