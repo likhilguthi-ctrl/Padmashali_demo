@@ -1875,8 +1875,8 @@ button {
 .section-header { padding-left: 0; padding-right: 0; }
 /* Content spacing, tightened ~30%:
    gap between category sections 36px+16px -> 25px+11px, gap between cards 16px -> 11px */
-.homepage-section { margin-bottom: 15px; }
-.horizontal-rail { margin-inline: -4px; gap: 8px; padding-bottom: 5px; }
+.homepage-section { margin-bottom: 25px; }
+.horizontal-rail { margin-inline: -4px; gap: 11px; padding-bottom: 11px; }
 
 /* Header logo/menu share the same left & right edge as the slide */
 .app-header { padding-inline: var(--page-gutter); }
@@ -1955,4 +1955,177 @@ button {
   .hero-meta-row { margin-bottom: 8px; }
   .hero-description { margin-bottom: 10px; -webkit-line-clamp: 2; }
   .hero-btn-primary, .hero-btn-secondary { font-size: 12px; padding: 0 15px; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   DETAILS MODAL — full-bleed image, text + buttons on the LEFT
+   • The image fills the entire modal (right-aligned, full height, never
+     cropped or stretched). Spare space on the left is filled with a blurred
+     copy of the same image.
+   • A dark shadow sits on the image's left side so the title, badges,
+     description and buttons stay readable.
+   • Phones (≤760px): image on top, text below.
+   ══════════════════════════════════════════════════════════════════════ */
+.modal-container {
+  --modal-h: min(clamp(380px, 46vw, 540px), calc(100svh - 32px));  /* height of the image area */
+  --modal-w: min(1040px, calc(100vw - 32px));
+  width: var(--modal-w);
+  max-width: none;
+  max-height: calc(100svh - 32px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #0d0b08;
+}
+
+/* Image layer (the image itself is set on this element by JS) */
+.modal-hero-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: var(--modal-h);
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #0d0b08;
+  background-size: cover;
+  background-position: center;
+}
+.modal-hero-cover::before,
+.modal-hero-cover::after {
+  content: "";
+  position: absolute;
+  background-image: inherit;
+  background-repeat: no-repeat;
+}
+.modal-hero-cover::before {               /* blurred fill behind */
+  inset: -24px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(26px) brightness(0.55) saturate(1.1);
+  z-index: 0;
+}
+.modal-hero-cover::after {                /* sharp image: full height, right-aligned, exact 16:9 */
+  top: 0;
+  right: calc(var(--modal-h) * -0.28);    /* nudged right (extra blurred edge is clipped) so the poster clears the text */
+  height: 100%;
+  width: calc(var(--modal-h) * 16 / 9);
+  background-size: 100% 100%;
+  background-position: right center;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 24%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 24%);
+}
+/* Black shadow on the image, strongest where the text sits (left) */
+.modal-hero-gradient {
+  z-index: 2;
+  background:
+    linear-gradient(90deg,
+      rgba(8, 6, 4, 0.97) 0%,
+      rgba(8, 6, 4, 0.9) 28%,
+      rgba(8, 6, 4, 0.55) 48%,
+      rgba(8, 6, 4, 0.12) 66%,
+      transparent 80%),
+    linear-gradient(180deg, transparent 70%, rgba(8, 6, 4, 0.55) 100%);
+}
+
+/* Text column — bottom-left over the image */
+.modal-body-content {
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--modal-h);
+  margin: 0;
+  padding: 64px clamp(22px, 3.4vw, 44px) clamp(24px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+}
+.modal-body-content > :not(.simulated-player-box) { max-width: min(420px, 100%); }
+.modal-body-content > .modal-actions { max-width: min(520px, 100%); }
+
+.modal-title-logo {
+  display: block;
+  width: min(330px, 100%);
+  max-width: none;
+  max-height: none;
+  height: auto;
+  margin: 0 0 -8px;                       /* trims transparent padding inside the logo art */
+  object-position: left center;
+}
+#modalTitle { text-align: left; margin: 0 0 10px; line-height: 1.15; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8); }
+
+.modal-meta-row { justify-content: flex-start; gap: 8px; margin: 10px 0 12px; }
+.modal-description {
+  margin: 0 0 20px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.85);
+}
+.modal-actions { justify-content: flex-start; gap: 10px; margin-bottom: 0; }
+.modal-actions .hero-btn-primary,
+.modal-actions .hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.simulated-player-box { align-self: stretch; width: 100%; margin-top: 20px; text-align: left; }
+
+/* Compact laptops / small windows (761–1000px): narrower text column + slimmer buttons
+   so nothing runs onto the poster */
+@media (min-width: 761px) and (max-width: 1000px) {
+  .modal-body-content > :not(.simulated-player-box) { max-width: 370px; }
+  .modal-body-content > .modal-actions { max-width: 420px; }
+  .modal-title-logo { width: min(300px, 100%); }
+  .modal-description { font-size: 14px; }
+  .modal-actions { gap: 8px; }
+  .modal-actions .hero-btn-primary,
+  .modal-actions .hero-btn-secondary { padding: 0 14px; font-size: 13px; }
+}
+
+/* ── Phones / narrow screens: image on top, text underneath ───────────── */
+@media (max-width: 760px) {
+  .modal-overlay { padding: 10px; }
+  .modal-container {
+    --modal-h: clamp(220px, 36svh, 300px);
+    --modal-w: calc(100vw - 20px);
+    max-height: calc(100svh - 20px);
+  }
+  .modal-hero-cover { position: relative; }
+  .modal-hero-cover::after {               /* centered poster */
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 18%, #000 82%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 18%, #000 82%, transparent 100%);
+  }
+  .modal-hero-gradient {
+    background: linear-gradient(180deg, transparent 62%, rgba(13, 11, 8, 0.8) 88%, #0d0b08 100%);
+  }
+  .modal-body-content {
+    min-height: 0;
+    margin-top: -10px;
+    padding: 0 18px 22px;
+    justify-content: flex-start;
+  }
+  .modal-body-content > :not(.simulated-player-box),
+  .modal-body-content > .modal-actions { max-width: 100%; }
+  .modal-title-logo { width: min(280px, 88%); }
+  .modal-description { font-size: 14px; margin-bottom: 18px; }
+  .modal-actions { gap: 8px; width: 100%; }
+  .modal-actions .hero-btn-primary,
+  .modal-actions .hero-btn-secondary { height: 40px; padding: 0 16px; font-size: 13px; }
+  .modal-actions .hero-btn-primary { flex: 1 1 100%; }
 }

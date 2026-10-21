@@ -1,6 +1,31 @@
 {
   "hero_section": [
     {
+      "id": "item_koundinya_akkineni_bapuji",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Koundinya Akkineni Bapuji",
+          "description": "Padmashali leader • Telangana movement leader. Learn about his community leadership and role in the Telangana movement.",
+          "assets": {
+            "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/en/poster-2x3.png",
+            "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/en/banner-16x9.png",
+            "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "కౌండిన్య అక్కినేని బాపూజీ",
+          "description": "పద్మశాలి నాయకుడు • తెలంగాణ ఉద్యమ నేత సమాజ నాయకత్వంలో, తెలంగాణ ఉద్యమంలో ఆయన పాత్రను ఈ పరిచయం వివరిస్తుంది.",
+          "assets": {
+            "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/te/poster-2x3.png",
+            "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/te/banner-16x9.png",
+            "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
       "id": "hero_padmashali_uttej",
       "language_specific_values": [
         {
@@ -21,31 +46,6 @@
             "2_3": "./assets/community-personalities/padmashali_uttej/te/poster-2x3.png",
             "16_9": "./assets/community-personalities/padmashali_uttej/te/banner-16x9.png",
             "3_1": "./assets/community-personalities/padmashali_uttej/te/title-logo-3x1.png"
-          }
-        }
-      ]
-    },
-    {
-      "id": "hero_padmashali_pride",
-      "language_specific_values": [
-        {
-          "language": "en",
-          "title": "Padmashali Pride",
-          "description": "A folk song celebrating Padmashali pride. Its lyrics place community identity and self-respect at the heart of a celebratory folk melody.",
-          "assets": {
-            "2_3": "./assets/music/padmashali_pride/en/poster-2x3.png",
-            "16_9": "./assets/music/padmashali_pride/en/banner-16x9.png",
-            "3_1": "./assets/music/padmashali_pride/en/title-logo-3x1.png"
-          }
-        },
-        {
-          "language": "te",
-          "title": "పద్మశాలి పెద్దశాలి",
-          "description": "పద్మశాలుల గౌరవాన్ని చాటే జానపద గీతం. సమాజ గుర్తింపు, ఆత్మగౌరవాన్ని ఉత్సవభరితమైన జానపద స్వరంలో ఈ పాట ప్రతిధ్వనిస్తుంది.",
-          "assets": {
-            "2_3": "./assets/music/padmashali_pride/te/poster-2x3.png",
-            "16_9": "./assets/music/padmashali_pride/te/banner-16x9.png",
-            "3_1": "./assets/music/padmashali_pride/te/title-logo-3x1.png"
           }
         }
       ]
@@ -143,6 +143,31 @@
       ],
       "description": "Community Personalities",
       "content": [
+        {
+          "random_value": "item_koundinya_akkineni_bapuji",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Koundinya Akkineni Bapuji",
+              "description": "Padmashali leader • Telangana movement leader. Learn about his community leadership and role in the Telangana movement.",
+              "assets": {
+                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/en/poster-2x3.png",
+                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/en/banner-16x9.png",
+                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/en/title-logo-3x1.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కౌండిన్య అక్కినేని బాపూజీ",
+              "description": "పద్మశాలి నాయకుడు • తెలంగాణ ఉద్యమ నేత సమాజ నాయకత్వంలో, తెలంగాణ ఉద్యమంలో ఆయన పాత్రను ఈ పరిచయం వివరిస్తుంది.",
+              "assets": {
+                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/te/poster-2x3.png",
+                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/te/banner-16x9.png",
+                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/te/title-logo-3x1.png"
+              }
+            }
+          ]
+        },
         {
           "random_value": "item_padmashali_uttej",
           "languages_content": [
@@ -264,31 +289,6 @@
                 "2_3": "./assets/community-personalities/urvashi_sharada/te/poster-2x3.png",
                 "16_9": "./assets/community-personalities/urvashi_sharada/te/banner-16x9.png",
                 "3_1": "./assets/community-personalities/urvashi_sharada/te/title-logo-3x1.png"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_koundinya_akkineni_bapuji",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "Koundinya Akkineni Bapuji",
-              "description": "Padmashali leader • Telangana movement leader. Learn about his community leadership and role in the Telangana movement.",
-              "assets": {
-                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/en/poster-2x3.png",
-                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/en/banner-16x9.png",
-                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/en/title-logo-3x1.png"
-              }
-            },
-            {
-              "language": "te",
-              "title": "కౌండిన్య అక్కినేని బాపూజీ",
-              "description": "పద్మశాలి నాయకుడు • తెలంగాణ ఉద్యమ నేత సమాజ నాయకత్వంలో, తెలంగాణ ఉద్యమంలో ఆయన పాత్రను ఈ పరిచయం వివరిస్తుంది.",
-              "assets": {
-                "2_3": "./assets/community-personalities/koundinya_akkineni_bapuji/te/poster-2x3.png",
-                "16_9": "./assets/community-personalities/koundinya_akkineni_bapuji/te/banner-16x9.png",
-                "3_1": "./assets/community-personalities/koundinya_akkineni_bapuji/te/title-logo-3x1.png"
               }
             }
           ]
