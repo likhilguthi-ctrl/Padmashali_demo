@@ -1515,3 +1515,444 @@ button {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+
+/* ── Compact hero details and quick category navigation ─────────────── */
+.hero-content-box {
+  max-width: min(480px, calc(100% - 40px));
+  transform: translateY(-42%);
+  gap: 0;
+}
+@keyframes heroSlideUp {
+  from { opacity: 0; transform: translateY(-34%); }
+  to { opacity: 1; transform: translateY(-42%); }
+}
+.hero-title-logo-img {
+  max-width: min(320px, 68vw);
+  max-height: clamp(52px, 9vh, 86px);
+  margin-bottom: 9px;
+}
+.hero-title-text {
+  font-size: clamp(24px, 3.2vw, 40px);
+  line-height: 1.1;
+  margin-bottom: 9px;
+}
+.hero-meta-row { gap: 6px; margin-bottom: 9px; }
+.hero-badge { font-size: 10px; padding: 3px 6px; }
+.hero-description {
+  max-width: 430px;
+  font-size: clamp(12px, 1vw, 13px);
+  line-height: 1.45;
+  margin-bottom: 14px;
+  -webkit-line-clamp: 2;
+}
+.hero-actions-row { gap: 9px; }
+.hero-btn-primary, .hero-btn-secondary {
+  font-size: 13px;
+  padding: 9px 17px;
+  gap: 7px;
+}
+.hero-btn-primary svg { width: 17px; height: 17px; }
+.hero-btn-secondary svg { width: 16px; height: 16px; }
+
+.category-quick-nav {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 10px 2px 20px;
+  margin: 0 0 8px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.category-quick-nav::-webkit-scrollbar { display: none; }
+.category-quick-link {
+  flex: 0 0 180px;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-default);
+  background:
+    linear-gradient(145deg, rgba(var(--tenant-primary-rgb),0.25), rgba(255,255,255,0.035) 58%, rgba(0,0,0,0.42)),
+    var(--surface-card, #171717);
+  color: var(--text-heading);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+  transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+}
+.category-quick-link:hover,
+.category-quick-link:focus-visible {
+  transform: translateY(-3px);
+}
+.category-quick-link:hover,
+.category-quick-link:focus-visible {
+  color: var(--text-heading);
+  background: rgba(var(--tenant-primary-rgb),0.16);
+  border-color: var(--tenant-primary);
+  outline: none;
+}
+.homepage-section { scroll-margin-top: 100px; }
+
+@media (max-width: 768px) {
+  .hero-content-box {
+    max-width: calc(100% - 48px);
+    left: 24px;
+    transform: translateY(-35%);
+  }
+  @keyframes heroSlideUp {
+    from { opacity: 0; transform: translateY(-28%); }
+    to { opacity: 1; transform: translateY(-35%); }
+  }
+  .hero-title-logo-img { max-width: min(240px, 68vw); max-height: 60px; margin-bottom: 6px; }
+  .hero-title-text { font-size: clamp(22px, 6vw, 30px); margin-bottom: 7px; }
+  .hero-meta-row { gap: 5px; margin-bottom: 7px; }
+  .hero-badge { font-size: 9px; padding: 3px 5px; }
+  .hero-description { font-size: 12px; line-height: 1.4; margin-bottom: 10px; -webkit-line-clamp: 2; }
+  .hero-btn-primary, .hero-btn-secondary { font-size: 12px; padding: 8px 12px; }
+  .category-quick-nav { gap: 7px; padding-bottom: 16px; }
+  .category-quick-link { flex-basis: 140px; padding: 10px; border-radius: 9px; font-size: 12px; }
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   HERO — CONSOLIDATED SPACING & ALIGNMENT
+   Single source of truth for the hero slider + category tiles.
+   (Replaces the previous stacked "NETFLIX-STYLE" / "FINAL FIX" overrides.)
+
+   Alignment model
+   • --page-gutter  : same left/right inset as the rails below, so the hero,
+                      category tiles and section headings share one left edge.
+   • --hero-pad-x/y : inner inset of the hero card; the brand logo, title,
+                      badges, description and buttons all hang off the same
+                      left edge, and the buttons sit on the same baseline
+                      as the slide indicators.
+   • --header-offset: height of the fixed header, so the hero never starts
+                      underneath it.
+   ══════════════════════════════════════════════════════════════════════ */
+:root {
+  --page-gutter: clamp(10px, 1.6vw, 28px);   /* slimmer = wider slide */
+  --header-offset: var(--navbar-height, 64px);
+  --hero-pad-x: clamp(18px, 3vw, 40px);
+  --hero-pad-y: clamp(18px, 2.6vw, 30px);
+  --hero-radius: 14px;
+  --hero-btn-h: 38px;
+  --tile-w: 140px;
+  --tile-h: 84px;
+  /* space the category row needs below the slide (top pad + tile + bottom pad) */
+  --tiles-block: calc(var(--tile-h) + 34px);
+  --hero-top-gap: 14px;
+  scroll-padding-top: calc(var(--header-offset) + 12px);
+}
+
+/* Wrapper: clears the fixed header and aligns with the page gutter */
+.hero-carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: calc(var(--header-offset) + var(--hero-top-gap)) var(--page-gutter) 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+/* Slider stage */
+.hero-carousel-stage {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 460px; /* fallback */
+  height: max(300px, min(calc(100vh - var(--header-offset) - var(--hero-top-gap) - var(--tiles-block)), 56vw));
+  height: max(300px, min(calc(100svh - var(--header-offset) - var(--hero-top-gap) - var(--tiles-block)), 56vw));
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--hero-radius);
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+}
+
+.hero-carousel-card { width: 100%; height: 100%; border-radius: inherit; overflow: hidden; }
+.hero-banner-image { background-position: center 20%; background-size: cover; filter: brightness(0.92); }
+
+/* Gradients: strong on the left (text), soft elsewhere */
+.hero-left-gradient {
+  background: linear-gradient(90deg,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.6) 36%,
+    rgba(0, 0, 0, 0.12) 72%,
+    transparent 100%);
+}
+.hero-bottom-gradient {
+  background: linear-gradient(180deg,
+    transparent 40%,
+    rgba(0, 0, 0, 0.45) 72%,
+    rgba(0, 0, 0, 0.8) 100%);
+}
+.hero-top-gradient { background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 24%); }
+
+/* Brand logo — top-left, on the shared left edge */
+.hero-brand-logo-container {
+  top: var(--hero-pad-y);
+  left: var(--hero-pad-x);
+  display: flex;
+  align-items: center;
+}
+.hero-brand-logo-container img {
+  display: block;
+  max-height: 34px !important;
+  max-width: 120px !important;
+  width: auto;
+  height: auto;
+}
+
+/* Content block — anchored bottom-left (no more top% + translate guesswork) */
+.hero-content-box {
+  top: auto;
+  bottom: var(--hero-pad-y);
+  left: var(--hero-pad-x);
+  transform: none;
+  width: min(460px, calc(100% - (var(--hero-pad-x) * 2)));
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  animation: heroSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes heroSlideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title-logo-img {
+  display: block;
+  width: auto;
+  height: auto;
+  width: min(330px, 100%);
+  max-width: 60vw;
+  max-height: none;
+  margin: 0 0 8px;
+  object-fit: contain;
+  object-position: left center;
+}
+.hero-title-text {
+  margin: 0 0 12px;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.12;
+}
+
+.hero-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.hero-badge {
+  font-size: 10px;
+  line-height: 1;
+  padding: 4px 7px;
+}
+
+.hero-description {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 0 14px;
+  font-size: clamp(12px, 1vw, 13px);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* Buttons — identical height, centred content, even gap */
+.hero-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+.hero-btn-primary,
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: var(--hero-btn-h);
+  padding: 0 18px;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.hero-btn-primary svg,
+.hero-btn-secondary svg { flex: 0 0 auto; width: 16px; height: 16px; }
+
+/* Arrows: vertically centred, same inset as the text */
+.hero-nav-arrow { width: 42px; height: 42px; }
+.hero-nav-arrow-left  { left: 14px; }
+.hero-nav-arrow-right { right: 14px; }
+
+/* Indicators: right edge mirrors the left text inset, vertically centred on the buttons */
+.hero-indicators-container {
+  bottom: calc(var(--hero-pad-y) + (var(--hero-btn-h) - 24px) / 2);
+  right: var(--hero-pad-x);
+  padding: 6px 12px;
+}
+
+/* Category tiles — directly under the slider, flush with its left/right edges */
+.hero-carousel-wrapper > .category-quick-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 16px 0 6px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.hero-carousel-wrapper > .category-quick-nav::-webkit-scrollbar { display: none; }
+
+.hero-carousel-wrapper > .category-quick-nav .category-quick-link {
+  flex: 1 0 var(--tile-w);   /* grow to fill the row evenly */
+  width: auto;
+  min-width: var(--tile-w);
+  height: var(--tile-h);
+  aspect-ratio: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: linear-gradient(145deg,
+    rgba(var(--tenant-primary-rgb), 0.26),
+    rgba(28, 28, 28, 0.72) 55%,
+    rgba(0, 0, 0, 0.9));
+  color: var(--text-heading);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: normal;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+.hero-carousel-wrapper > .category-quick-nav .category-quick-link:hover,
+.hero-carousel-wrapper > .category-quick-nav .category-quick-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--tenant-primary);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+/* Section headings and first card share the hero's left edge
+   (rail keeps its 4px inner padding so hover-scale isn't clipped). */
+.section-header { padding-left: 0; padding-right: 0; }
+/* Content spacing, tightened ~30%:
+   gap between category sections 36px+16px -> 25px+11px, gap between cards 16px -> 11px */
+.homepage-section { margin-bottom: 15px; }
+.horizontal-rail { margin-inline: -4px; gap: 8px; padding-bottom: 5px; }
+
+/* Header logo/menu share the same left & right edge as the slide */
+.app-header { padding-inline: var(--page-gutter); }
+
+/* The rails must start BELOW the tiles — the old -48px pull-up overlapped them */
+.main-content-container { margin-top: 0; padding-top: 14px; padding-inline: var(--page-gutter); max-width: none; }
+.homepage-section { scroll-margin-top: calc(var(--header-offset) + 12px); }
+
+/* ── Wide screens: keep hero and rails on the same max-width ───────── */
+@media (min-width: 1600px) {
+  :root { --tile-w: 156px; --tile-h: 92px; }
+  .hero-content-box { width: min(520px, 50%); }
+  .hero-description { max-width: 480px; font-size: 14px; }
+}
+
+/* ── Tablets / compact laptops: header wraps to two rows (104px) ───── */
+@media (max-width: 1150px) {
+  :root { --header-offset: 104px; --page-gutter: 28px; }
+}
+
+@media (max-width: 820px) {
+  :root { --page-gutter: 16px; --hero-btn-h: 36px; }
+  .hero-nav-arrow { display: none; }
+}
+
+/* ── Phones ────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  :root {
+    --header-offset: 98px;
+    --page-gutter: 12px;
+    --hero-pad-x: 16px;
+    --hero-pad-y: 16px;
+    --hero-btn-h: 34px;
+    --tile-w: 112px;
+    --tile-h: 72px;
+  }
+  .hero-carousel-wrapper { padding-top: calc(var(--header-offset) + 10px); }
+  .hero-carousel-stage { height: clamp(340px, 92vw, 400px); border-radius: 11px; }  /* phones have vertical room */
+  .hero-brand-logo-container img { max-height: 26px !important; max-width: 100px !important; }
+  .hero-content-box { width: calc(100% - (var(--hero-pad-x) * 2)); }
+  .hero-title-logo-img { width: min(230px, 100%); max-width: 66vw; max-height: none; margin-bottom: 6px; }
+  .hero-title-text { font-size: clamp(20px, 6vw, 26px); margin-bottom: 8px; }
+  .hero-meta-row { gap: 4px; margin-bottom: 8px; }
+  .hero-badge { font-size: 9px; padding: 3px 5px; }
+  .hero-description { max-width: 100%; font-size: 12px; line-height: 1.4; margin-bottom: 10px; }
+  .hero-actions-row { gap: 8px; }
+  .hero-btn-primary, .hero-btn-secondary { font-size: 12px; padding: 0 13px; }
+  .hero-carousel-wrapper > .category-quick-nav { gap: 8px; padding-top: 12px; }
+  .hero-carousel-wrapper > .category-quick-nav .category-quick-link { padding: 8px 9px; font-size: 11px; border-radius: 8px; }
+  /* dots move to the top-right so they never collide with the buttons */
+  .hero-indicators-container { bottom: auto; top: var(--hero-pad-y); right: var(--hero-pad-x); padding: 5px 9px; }
+}
+
+@media (max-width: 380px) {
+  :root { --page-gutter: 10px; --hero-pad-x: 14px; }
+  .hero-carousel-stage { height: 360px; }
+  .hero-btn-primary, .hero-btn-secondary { padding: 0 11px; }
+}
+
+/* ── Short landscape phones ────────────────────────────────────────── */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 540px) {
+  :root { --header-offset: 76px; }
+  .hero-description { -webkit-line-clamp: 2; }
+  .hero-indicators-container { top: auto; bottom: calc(var(--hero-pad-y) + (var(--hero-btn-h) - 24px) / 2); }
+  .main-content-container { margin-top: 0; }
+}
+
+/* ── Short viewports (laptops, zoomed browsers): tighten the text block so it
+      stays neatly inside the slide while the tiles remain above the fold ── */
+@media (min-width: 601px) and (max-height: 760px) {
+  :root { --tile-h: 76px; --hero-btn-h: 34px; }
+  .hero-brand-logo-container img { max-height: 30px !important; }
+  .hero-content-box { width: min(440px, 52%); }
+  .hero-title-logo-img { width: min(280px, 100%); margin-bottom: 6px; }
+  .hero-title-text { font-size: clamp(22px, 2.6vw, 30px); margin-bottom: 8px; }
+  .hero-meta-row { margin-bottom: 8px; }
+  .hero-description { margin-bottom: 10px; -webkit-line-clamp: 2; }
+  .hero-btn-primary, .hero-btn-secondary { font-size: 12px; padding: 0 15px; }
+}

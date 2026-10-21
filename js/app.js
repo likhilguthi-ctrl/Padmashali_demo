@@ -216,6 +216,35 @@
     });
   }
 
+  function renderCategoryQuickNav() {
+    const nav = document.getElementById('categoryQuickNav');
+    if (!nav) return;
+
+    // Keep the category boxes inside the hero section, directly below the slider.
+    const heroSection = elements.heroSection || document.getElementById('heroSection');
+    if (heroSection && nav.parentElement !== heroSection) {
+      heroSection.appendChild(nav);
+    }
+
+    const sections = state.data?.content_section || [];
+    nav.innerHTML = sections.map((section) => {
+      const localized = getLocalizedSection(section, state.currentLanguage);
+      if (!localized || localized.content.length === 0) return '';
+      return `<a class="category-quick-link" href="#section-${localized.id}" data-category-target="${localized.id}">${localized.title}</a>`;
+    }).join('');
+
+    nav.querySelectorAll('.category-quick-link').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = document.getElementById(`section-${link.dataset.categoryTarget}`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          updateActiveSectionLink(link.dataset.categoryTarget);
+        }
+      });
+    });
+  }
+
   function updateActiveSectionLink(id) {
     elements.headerNav?.querySelectorAll('.nav-link').forEach((link) => {
       const isActive = link.dataset.navSection === id || (!id && link.hasAttribute('data-home-link'));
@@ -490,6 +519,7 @@
       .join('');
 
     renderSectionNavigation();
+    renderCategoryQuickNav();
     if (state.sectionObserver) state.sectionObserver.disconnect();
     if ('IntersectionObserver' in window) {
       state.sectionObserver = new IntersectionObserver((entries) => {
