@@ -1,6 +1,31 @@
 {
   "hero_section": [
     {
+      "id": "hero_podcast_kanta_rao",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "A Conversation with Kanta Rao",
+          "description": "Cinema journey and behind-the-scenes stories with Kanta Rao. The conversation revisits defining moments from his career and memories from behind the camera.",
+          "assets": {
+            "2_3": "./assets/podcasts/kanta_rao/en/poster-2x3.png",
+            "16_9": "./assets/podcasts/kanta_rao/en/banner-16x9.png",
+            "3_1": "./assets/podcasts/kanta_rao/en/title-logo-3x1.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "కాంతారావుతో ముఖాముఖి",
+          "description": "కాంతారావు సినీ ప్రయాణం, తెరవెనుక కథలు. ఆయన సినీ జీవితంలోని మలుపులు, కెమెరా వెనుక అనుభవాలను ఈ సంభాషణ మళ్లీ గుర్తుచేస్తుంది.",
+          "assets": {
+            "2_3": "./assets/podcasts/kanta_rao/te/poster-2x3.png",
+            "16_9": "./assets/podcasts/kanta_rao/te/banner-16x9.png",
+            "3_1": "./assets/podcasts/kanta_rao/te/title-logo-3x1.png"
+          }
+        }
+      ]
+    },
+    {
       "id": "item_koundinya_akkineni_bapuji",
       "language_specific_values": [
         {
@@ -50,31 +75,7 @@
         }
       ]
     },
-    {
-      "id": "hero_podcast_kanta_rao",
-      "language_specific_values": [
-        {
-          "language": "en",
-          "title": "A Conversation with Kanta Rao",
-          "description": "Cinema journey and behind-the-scenes stories with Kanta Rao. The conversation revisits defining moments from his career and memories from behind the camera.",
-          "assets": {
-            "2_3": "./assets/podcasts/kanta_rao/en/poster-2x3.png",
-            "16_9": "./assets/podcasts/kanta_rao/en/banner-16x9.png",
-            "3_1": "./assets/podcasts/kanta_rao/en/title-logo-3x1.png"
-          }
-        },
-        {
-          "language": "te",
-          "title": "కాంతారావుతో ముఖాముఖి",
-          "description": "కాంతారావు సినీ ప్రయాణం, తెరవెనుక కథలు. ఆయన సినీ జీవితంలోని మలుపులు, కెమెరా వెనుక అనుభవాలను ఈ సంభాషణ మళ్లీ గుర్తుచేస్తుంది.",
-          "assets": {
-            "2_3": "./assets/podcasts/kanta_rao/te/poster-2x3.png",
-            "16_9": "./assets/podcasts/kanta_rao/te/banner-16x9.png",
-            "3_1": "./assets/podcasts/kanta_rao/te/title-logo-3x1.png"
-          }
-        }
-      ]
-    },
+    
     {
       "id": "hero_education_av_narayana_ips",
       "language_specific_values": [
